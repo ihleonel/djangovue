@@ -4,5 +4,5 @@
 2. Crear entorno virtual (python v3.6)
 3. Activar entorno virtual e instalar dependencias (requirements.txt)
 4. En la carpeta frontend instalar dependencias y correr build
-5. Inicar servidor de django
+5. En la raíz del proyecto iniciar servidor de django
 6. Listo
