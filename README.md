@@ -77,18 +77,19 @@ Una vez creados estos archivos pasamos a crear nuestro proyecto django. En la ra
 docker-compose run web django-admin.py startproject djangovue .
 ```
 El directorio debería quedar de la siguiente forma:
-
+```sh
 djangovue/
 ├── djangovue
-│   ├── asgi.py
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
 ├── docker-compose.yml
 ├── Dockerfile
 ├── manage.py
 └── requirements.txt
+```
 
 Como el proyecto fue creado usando el servicio "web" definido en `docker-compose.yml` los archivos tendrán como propietario al usuario `root`:
 ```sh
