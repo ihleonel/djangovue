@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:9.6.18
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    networks:
+      - djangonetwork
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    networks:
+      - djangonetwork
+
+networks:
+  djangonetwork:
+      driver: bridge
