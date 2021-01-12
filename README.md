@@ -1,5 +1,6 @@
-# Django + Vue
+# Django + Vue CLI
 ## Proceso de creación de un proyecto básico
+### Django
 
 Iniciamos creando los siguientes archivos:
 
@@ -138,4 +139,64 @@ Una vez configurado el archivo `settings.py` pasaremos a iniciar todos los servi
 docker-compose up
 ```
 
-Si todo salio bien debería estar corriendo nuestro sistema en http://localhost:8000
+Si todo salió bien nuestro sistema debería estar corriendo en http://localhost:8000
+
+### Vue CLI
+
+> En este proyecto estoy usando nvm v0.33.11 la cual mepermite trabajar con varias versiones de nodejs en este caso estoy sobre node v12.16.1 y npm v6.13.4.
+
+Instalaremos de manera global vue-cli que nos permitira crear proyectos vue pre-configurados:
+
+```sh
+npm install -g @vue-cli
+```
+
+Recomiendo leer la documentación para mas información [https://cli.vuejs.org/guide/installation.html](Vue CLI)
+
+Si la instalación fue correcta podremos ver la versión de vue-cli en mi caso @vue/cli 4.5.10
+
+Ahora crearemos un proyecto vue:
+
+```sh
+vue create frontend
+```
+
+Se habrá creado una carpeta llamada `frontend`.
+
+```sh
+djangovue/
+├── djangovue
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── docker-compose.yml
+├── Dockerfile
+├── frontend
+│   ├── babel.config.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   └── index.html
+│   ├── README.md
+│   └── src
+│       ├── App.vue
+│       ├── assets
+│       │   └── logo.png
+│       ├── components
+│       │   └── HelloWorld.vue
+│       └── main.js
+├── manage.py
+├── README.md
+└── requirements.txt
+```
+
+Para iniciar un servidor y correr nuestro proyecto vue ejecutamos el comando:
+
+```sh
+npm run serve
+```
+Si todo salió bien nuestro proyecto vue debería estar corriendo en http://localhost:8080
