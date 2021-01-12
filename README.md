@@ -143,15 +143,15 @@ Si todo salió bien nuestro sistema debería estar corriendo en http://localhost
 
 ### Vue CLI
 
-> En este proyecto estoy usando nvm v0.33.11 la cual mepermite trabajar con varias versiones de nodejs en este caso estoy sobre node v12.16.1 y npm v6.13.4.
+> En este proyecto estoy usando nvm v0.33.11 la cual me permite trabajar con varias versiones de nodejs en este caso estoy sobre node v12.16.1 y npm v6.13.4.
 
-Instalaremos de manera global vue-cli que nos permitira crear proyectos vue pre-configurados:
+Instalaremos de manera global vue-cli que nos permitirá crear proyectos vue pre-configurados:
 
 ```sh
 npm install -g @vue-cli
 ```
 
-Recomiendo leer la documentación para mas información [https://cli.vuejs.org/guide/installation.html](Vue CLI)
+Recomiendo leer la documentación para más información [Vue CLI](https://cli.vuejs.org/guide/installation.html)
 
 Si la instalación fue correcta podremos ver la versión de vue-cli en mi caso @vue/cli 4.5.10
 
